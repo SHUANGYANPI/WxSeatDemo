@@ -1,0 +1,11 @@
+<view style="height: 4rem;margin-top:50rpx;font-size:50rpx;text-align:center;">验证信息-修改密码</view>
+
+<view style="display:flex;justify-content: center;height: 4rem;">
+  <label >身份证号：</label>
+  <input type="text"  style="border: 1px solid darkgrey;" bindinput="IDInput" />
+</view>
+<view style="display:flex;justify-content: center;height: 4rem;">
+  <label >新的密码：</label>
+  <input type="text"  style="border: 1px solid darkgrey;" bindinput="newPwdInput" />
+</view>
+<button style="width:35%;text-align:center;background-color:#3299cc;margin-left:450rpx;" bindtap="Click">确认</button>

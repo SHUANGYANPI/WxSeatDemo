@@ -1,0 +1,27 @@
+<view class="tirtle">选择图书馆楼层</view>
+<view class="floor">
+    <view class="floor12">
+        <view class="floor01" value="1">
+            <view class='' bindtap="listClick" id="0">
+                <cover-image src="../../image/circle01.png"></cover-image>
+            </view>
+        </view>
+        <view class="floor02" value="2">
+            <view class='' bindtap="listClick" id="1">
+                <cover-image src="../../image/circle02.png"></cover-image>
+            </view>
+        </view>
+    </view>
+    <view class="floor34">
+        <view class="floor03" value="3">
+            <view class='' bindtap="listClick" id="2">
+                <cover-image src="../../image/circle03.png"></cover-image>
+            </view>
+        </view>
+        <view class="floor03" value="4">
+            <view class='' bindtap="listClick" id="3">
+                <cover-image src="../../image/circle04.png"></cover-image>
+            </view>
+        </view>
+    </view>
+</view>

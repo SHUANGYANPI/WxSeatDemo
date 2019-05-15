@@ -1,0 +1,8 @@
+<!--pages/choose_seat/rule/rule.wxml-->
+<view class="title">选座须知</view>
+<view>
+    <view class="p1">1.遵纪守法</view>
+    <view class="p2">2.文明选座</view>
+    <view class="p3">3.遵守规则</view>
+    <view class="p4">......   </view>
+</view>

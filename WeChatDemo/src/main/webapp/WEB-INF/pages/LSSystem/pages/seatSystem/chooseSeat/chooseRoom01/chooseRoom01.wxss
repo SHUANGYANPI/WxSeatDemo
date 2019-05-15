@@ -1,0 +1,50 @@
+.title{
+    text-align: center;
+    font-size: 50rpx;
+}
+.room{
+    display: flex;
+    width:100%;
+    
+    
+}
+.room01{
+    dispaly:flex;
+    
+    width: 50%;
+    height: 50%;
+    
+}
+.top01{
+    dispaly:flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 37%;
+}
+.buttom01{
+    dispaly:flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.room02,.room03{
+    dispaly:flex;
+    
+    width: 50%;
+    height: 50%;
+    
+}
+.top02,.top03{
+    dispaly:flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 37%;
+}
+.buttom02,.buttom03{
+    dispaly:flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}

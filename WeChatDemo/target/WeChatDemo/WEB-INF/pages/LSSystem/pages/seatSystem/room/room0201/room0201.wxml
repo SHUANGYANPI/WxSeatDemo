@@ -1,0 +1,8 @@
+<view>
+  <text>再中阁（自然图书N~S）(二楼)\n</text>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+</view>

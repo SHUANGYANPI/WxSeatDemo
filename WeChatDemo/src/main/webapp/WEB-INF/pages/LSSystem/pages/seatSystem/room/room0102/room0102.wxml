@@ -1,0 +1,14 @@
+<text>步曾阁：工具书(一楼){{}}/{{clo*3}}\n</text>
+<view class="picker" hidden="{{iftime}}">
+  <picker mode="time" value="{{time}}" start="8:00"  end="21:30" bindchange="bindTimeChange">
+      选择开始预约时间: {{time}}
+  </picker>
+</view>
+<icon type="success" color="red"/>已选
+<icon type="success" color="green"/>可选
+<icon type="success" color="blue"/>正选
+
+<view wx:for="{{color}}" wx:for-index='x' wx:for-item="r" >
+  <icon wx:for="{{r}}" wx:for-index='y' wx:for-item="c" type='success' id='{{x*clo+y}}' color="{{c}}" size="80rpx" bindtap="Click" class="seat"/>
+</view>
+<button  type="warn" bindtap="leave" class="Button">{{L}}</button>

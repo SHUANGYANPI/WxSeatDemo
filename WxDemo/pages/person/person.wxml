@@ -1,0 +1,23 @@
+<!--pages/psinformation/p_s_i.wxml-->
+<view class="ifm" hover-class='hv'>
+      <text  >个人信息</text>
+</view>
+  <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>    <!--//获取用户头像直接显示在小程序中-->
+  </view>
+<!--    <image src='../image/head.png' mode='center' class='img'></image>  -->    
+    <view class='myself'>个性签名：{{user.more}}</view>
+    
+    <view>
+      <text selectable>姓名：{{user.name}}</text>
+    </view>
+    <view >性别：{{user.sex}}</view>
+    <view >积分：{{user.jifen}}/5</view>
+    <view >选座状态：<text style=" color: red;font-weight: 700;">{{user.flag}}</text></view>
+    
+    
+
+<!-- <view wx:for="{{person}}">
+  {{index}}:{{item}}
+</view> -->
+

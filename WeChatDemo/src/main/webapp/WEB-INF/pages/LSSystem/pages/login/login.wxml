@@ -1,0 +1,18 @@
+<!--pages/register/register.wxml-->
+
+<view style="font-size:50rpx;margin-top:50rpx;text-align:center;height: 6rem;">
+  登录
+</view>
+<view style="display:flex;justify-content: center;height: 4rem;">
+  <label >学号：</label>
+  <input type="text" name="uno" style="border: 1px solid darkgrey;" bindinput="userNoInput" />
+</view>
+<view style="display:flex;justify-content: center;height: 4rem;">
+  <label >密码：</label>
+  <input type="text" password="password" style="border: 1px solid darkgrey;" bindinput="pasWInput" />
+</view>
+<view >
+  <button bindtap="loginBtnClick" style="width:50%;text-align:center;background-color:#3299cc">确认</button>
+</view>
+
+<view ><navigator url="../forget/forget" style="text-align:right;font-size:30rpx;">忘记密码？</navigator></view>

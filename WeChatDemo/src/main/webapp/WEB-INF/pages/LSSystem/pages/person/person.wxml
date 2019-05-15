@@ -1,0 +1,14 @@
+<!--pages/psinformation/p_s_i.wxml-->
+<view>
+    <image src='../image/head.png' mode='center' class='img'></image>
+    <view class="ifm" hover-class='hv'>个人信息</view>
+   <view><text selectable>姓名：{{user.name}}</text></view>
+    <view >性别：{{user.sex}}</view>
+    <view >积分：{{user.jifen}}/5</view>
+    <view >更多：{{user.more}}</view>
+</view>
+
+<!-- <view wx:for="{{person}}">
+  {{index}}:{{item}}
+</view> -->
+

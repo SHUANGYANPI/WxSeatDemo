@@ -1,0 +1,37 @@
+.top{
+    margin-top: 20rpx;
+    text-align: center;
+    font-size: 50rpx;
+}
+.one{
+    width: 95%;
+    height: 4rem;
+    margin-top: 30rpx;
+    margin-left: 25rpx;
+}
+.contactWay{
+    border: 1px solid darkgrey;
+}
+.two{
+    
+     
+    margin-top: 100rpx;
+    margin-left: 25rpx;
+}
+.Content{
+    width: 95%;
+    border: 1px solid darkgrey;
+}
+.currentWordNumber{
+    font-size: 28rpx;
+    color: gray;
+    position: absolute;
+    left: 630rpx;
+    top: 470rpx;
+  }
+.Button{
+    width: 30%;
+    align-items: right;
+    margin-top: 30rpx;
+    margin-left: 500rpx;
+}
