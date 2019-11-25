@@ -1,0 +1,16 @@
+<view style="height: 4rem;margin-top:50rpx;font-size:50rpx;text-align:center;">验证信息-修改密码</view>
+
+<view style="display:flex;margin-left:35rpx;height: 4rem;">
+  <text decode="{{true}}">学&nbsp;&nbsp;&nbsp;号：</text>
+  <input type="text"  style="border: 1px solid darkgrey;" bindinput="theUno" />
+</view>
+<view style="display:flex;margin-left:35rpx;height: 4rem;">
+  <text decode="{{true}}">邮&nbsp;&nbsp;&nbsp;箱：</text>
+  <input type="text"  style="border: 1px solid darkgrey;" bindinput="theMail" />
+  <button class='yanzhengma' type="primary" bindtap="Click">获取验证码</button>
+</view>
+<view style="display:flex;margin-left:35rpx;height: 4rem;">
+  <label >验证码：</label>
+  <input type="text"  style="border: 1px solid darkgrey;" bindinput="newPwdInput" />
+</view>
+<button style="width:35%;text-align:center;margin-left:450rpx;" type="primary" bindtap="Click">确认</button>

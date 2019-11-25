@@ -1,0 +1,61 @@
+<view class="background1">
+
+  <view class="myAndset">
+    <text class="my">我的</text>
+    <text class="set">设置</text>
+    </view>
+  <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl"></open-data>    <!--//获取用户头像直接显示在小程序中-->
+  </view>
+  <view class="name">
+      <text selectable>{{user.name}}</text>
+    </view>
+<!--    <image src='../image/head.png' mode='center' class='img'></image>  -->    
+    <view class='signature'>个性签名：{{user.more}}</view>
+</view>
+    
+<view class="table">
+ 
+  <view class="row1">
+    <image class="zeroCol" mode="aspectFit" src="../image/sex.png"/>
+    <text class="oneCol">性别：</text>
+    <text class="twoCol">{{user.sex}}</text>
+  </view>
+<view class="divLine"></view>
+  <view class="row2">
+    <image class="zeroCol" mode="aspectFit" src="../image/fen.png"/>
+    <text class="oneCol">积分：</text>
+    <text class="twoCol">{{user.jifen}}/5</text>
+  </view>
+<view class="divLine"></view>
+  <view class="row3">
+    <image class="zeroCol" mode="aspectFit" src="../image/fire.png"/>
+    <text class="oneCol">选座状态：</text>
+    <text class="twoCol" style=" color: red;font-weight: 700;">{{user.flag}}</text>
+  </view>
+<view class="divLine"></view>
+  <view class="row4">
+    <image class="zeroCol" mode="aspectFit" src="../image/addup.png"/>
+    <text class="oneCol">累计选座：</text>
+    <text class="twoCol">{{user.count}}次</text>
+  </view>
+</view>
+
+<view class="end">
+  <view class="row5">
+    <image class="zeroCol" mode="aspectFit" src="../image/location.png"/>
+    <text class="oneCol">选座位置：</text>
+    <text class="twoCol">{{user.floorId}} {{user.roomId}} {{user.noId}}<!--填入所选楼层、房间号、座位号--></text>
+  </view>
+   <view class="includeQiandao">
+     <image  class="qiandao" src="../image/sao.png" mode="aspectFit" bindtap="clickScnner"/>
+  </view>
+  <view class="saoma">扫码签到</view>
+  <view class="help">已经选座？点击图标扫码签到哦~</view>
+</view>
+    
+
+<!-- <view wx:for="{{person}}">
+  {{index}}:{{item}}
+</view> -->
+

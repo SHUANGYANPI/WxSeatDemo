@@ -1,0 +1,45 @@
+/* pages/seatSystem/floor/floor.wxss */
+.tirtle{
+    font-size: 50rpx;
+    text-align: center;
+}
+.floor{
+    dispaly:flex;
+    
+}
+.floor12{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.floor01{
+    display: flex;
+    width: 50%;
+    
+    flex-shrink: 1;
+}
+.floor02{
+    display: flex;
+    width: 50%;
+    flex-shrink: 1;
+}
+.floor34{
+    display: flex;
+    width:100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.floor03{
+    display: flex;
+    width: 50%;
+}
+.floor04{
+    display: flex;
+    width: 50%;
+}

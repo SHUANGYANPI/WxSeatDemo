@@ -1,0 +1,8 @@
+<view>
+  <text>野萝阁（数字文献阅览室）(四楼)\n</text>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+</view>

@@ -1,0 +1,124 @@
+/* pages/psinformation/p_s_i.wxss */
+page{
+  background-color: #F0F8FF;
+}
+.background1{
+  background:#1296db;
+  margin-top: 0rpx;
+}
+.my{
+margin-left: 50rpx;
+color: white;
+}
+.set{
+  float:right;
+  margin-right: 50rpx;
+  color: white;
+  }
+  .name{
+    text-align: center;
+    font-weight: 700;
+  }
+/*view{
+  margin-left: 40rpx;
+  line-height: 100rpx;
+}
+.ifm{
+
+  font-size: 50rpx;
+  color: purple;
+  margin-left: 270rpx;
+}*/
+.hv{
+  background:aqua;
+  opacity: .5;
+}
+/*
+.img{
+  width: 100%;
+  
+}*/
+.userinfo-avatar {  
+  overflow:hidden;  
+  display: block;  
+  width: 170rpx;  
+  height: 170rpx;  
+  margin: 20rpx;  
+  
+  margin-left: 275rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}  
+
+.signature{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;/**设置字体*/
+  font-size: smaller;
+  text-align: center;
+}
+
+.table{
+  background: #ffffff;
+  width: 100%;
+  margin-top: 35rpx;
+}
+.row1,.row2,.row3,.row4,.row5{
+  height: 90rpx;
+  display: flex;
+  width: 100%;
+  
+  
+}
+.zeroCol{
+  margin-left: 50rpx;
+  width: 10%;
+  height: auto;
+}
+.oneCol{
+  margin-left: 25rpx;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.twoCol{
+  width: 60%;
+  margin-left: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.divLine{
+  margin-top: 0rpx;
+  float: right;
+  background: #A9A9A0;
+  width: 83%;
+  height:1rpx;
+}
+
+.end{
+  
+  margin-top: 35rpx;
+  background: #ffffff;
+  height: 450rpx;
+  width: 100%;
+}
+.includeQiandao{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.qiandao{
+  width:130px;
+  height: 130px;
+
+}
+.saoma{
+  text-align:center;
+  font-weight : 900;
+}
+.help{
+  text-align: center;
+  font-size: 26rpx;
+  color: #6d6d6d;
+}

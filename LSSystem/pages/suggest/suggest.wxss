@@ -1,0 +1,70 @@
+page{
+    background-color: #F0F8FF;
+  }
+  .top{
+      width: 100%;
+      height: 250rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#1296db;
+  }
+.topTitle{
+    height: 150rpx;
+}
+.outText{
+    line-height: 60rpx;
+    font-size: 30rpx;
+    margin-left: 15rpx;
+    align-items: center;
+    color: gray;
+  }
+.one{
+    width: 100%;
+    height: auto; 
+}
+.radio-group {
+
+  }
+  .suggestPoint{
+    background: white;
+    margin-top: 1rpx;
+    line-height: 100rpx;
+    font-size: 37rpx;
+    color: #515151;
+    align-items: center;
+  }
+  .radio {
+      margin-left: 25rpx;
+      
+  }
+
+.contactWay{
+    border: 1px solid darkgrey;
+}
+.two{
+    background: white;
+    
+    
+}
+.Content{
+    
+    width: 100%;
+    
+   
+    border: 0px solid darkgrey;
+}
+.currentWordNumber{
+    font-size: 28rpx;
+    color: gray;
+    position: absolute;
+    left: 635rpx;
+    top: 730rpx;
+  }
+Button{
+    width: 30%;
+    align-items: right;
+    margin-top: 30rpx;
+    margin-left: 500rpx;
+    background-color: #1296db;
+}

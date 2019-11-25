@@ -1,0 +1,15 @@
+<view class="top">
+    {{suggest}}
+</view>
+<view class="one">
+    <view style="line-height:150rpx;">{{yourContactWay}}</view>
+    <input type="text"  class="contactWay"  placeholder="{{textContent}}"/>
+</view>
+<view class="two">
+    <view style="line-height:150rpx;">{{theContent}}</view>
+    <textarea class="Content" cursor-spacing="60" placeholder="{{textareaContent}}" bindinput="Inputs"></textarea>
+     <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+</view>
+<view class="Button">
+    <Button bindtap="Submit">{{BUuttonName}}</Button>
+</view>

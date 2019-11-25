@@ -1,0 +1,23 @@
+<!--pages/seat/seat.wxml-->
+<!--滚动图片-->
+<swiper class="indexbanner" autoplay circular>
+    <block wx:for="{{IndexBannerUrl}}">
+      <swiper-item >
+        <image class="indexbanner-image"  src="{{item.src}}" mode="aspectFill"  bindtap="bindViewTap"></image>
+      </swiper-item>
+    </block>
+</swiper>
+
+<!--表格-->
+<view class="table">
+  <view class="top"><navigator url="rule/rule" open-type="navigate">选座须知</navigator></view>
+  <view class="one_bgc">
+    <view class="one"><navigator url="floor/floor" open-type="navigate"  bindtap="ChooseSeat">选座</navigator></view>
+    <view class="one" style="background-color:yellow"><navigator url="floor/floor" open-type="navigate" bindtap="ChangeIfTime">预约</navigator></view>
+  </view>
+  <view class="two_bgc">
+    <view class="two" style="background-color:purple"><navigator url="floor/floor" open-type="navigate" bindtap="lookSeat">查看</navigator></view>
+    <view class="two">退座</view>
+  </view>
+  <view class="bottom" bindtap="More">更多功能</view>
+</view>

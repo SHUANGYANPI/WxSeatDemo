@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/person/person",
+    
+    "pages/suggest/suggest",
+    "pages/seatSystem/seatSystem",
+    "pages/seatSystem/library/library",
+    "pages/seatSystem/rule/rule",
+    "pages/seatSystem/chooseSeat/chooseSeat",
+    "pages/seatSystem/chooseSeat/chooseRoom01/chooseRoom01",
+    "pages/seatSystem/appointment/appointment",
+    "pages/seatSystem/floor/floor",
+    "pages/seatSystem/room/room0101/room0101",
+    "pages/seatSystem/room/room0102/room0102",
+    "pages/seatSystem/room/room0201/room0201",
+    "pages/seatSystem/room/room0202/room0202",
+    "pages/seatSystem/room/room0301/room0301",
+    "pages/seatSystem/room/room0302/room0302",
+    "pages/seatSystem/room/room0401/room0401",
+    "pages/seatSystem/room/room0402/room0402",
+    "pages/seatSystem/room/room0403/room0403",
+    "pages/logs/logs",
+    "pages/forget/forget",
+    "pages/register/register"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "图书馆约座助手",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#1269db",
+    "list": [
+      {
+        "pagePath": "pages/person/person",
+        
+        "text": "我的",
+        "iconPath": "pages/image/me.png",
+        "selectedIconPath": "pages/image/me-active.png"
+      },
+      {
+        "pagePath": "pages/seatSystem/seatSystem",
+        "text": "选座",
+        "iconPath": "pages/image/chair.png",
+        "selectedIconPath": "pages/image/chair-active.png"
+      },
+      {
+        "pagePath": "pages/suggest/suggest",
+        "text": "吐槽",
+        "iconPath": "pages/image/tucao.png",
+        "selectedIconPath": "pages/image/tucao-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

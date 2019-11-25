@@ -1,0 +1,22 @@
+<view class="top">
+    <image class="topTitle" src="../image/tucaoTitle.png" mode="aspectFit" />
+</view>
+<view class="outText">(必选)选择你想吐槽的问题点</view>
+<view class="one">
+    <radio-group class="radio-group" bindchange="radioChange">
+    <label  wx:for="{{suggestItems}}">
+        <view class="suggestPoint">
+            <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}}
+        </view>
+ </label>
+</radio-group>
+</view>
+<view class="outText">补充详细的吐槽点</view>
+<view class="two">
+    <view style="line-height:150rpx;">{{theContent}}</view>
+    <textarea class="Content" cursor-spacing="60" placeholder="{{textareaContent}}" bindinput="Inputs"></textarea>
+     <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+</view>
+<view class="Button">
+    <Button bindtap="Submit" >{{BUuttonName}}</Button>
+</view>

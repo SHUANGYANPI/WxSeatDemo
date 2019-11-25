@@ -1,0 +1,7 @@
+/* pages/forget/forget.wxss */
+.yangzhengma{
+  
+  width:15%;
+  height: 100rpx;
+  font-size: 20rpx;
+}

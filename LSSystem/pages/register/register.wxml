@@ -1,0 +1,49 @@
+<view class="title">注册信息填写</view>
+<view class="total">
+    <view class="theName">
+        <view class="Name">姓名</view>
+        <view class="textName">
+ <input type="text" auto-focus focus='{{focus}}' bindinput="theName" bindblur="validate" placeholder="请输入你的姓名..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="theNo">
+        <view class="No">学号</view>
+        <view class="textNo">
+ <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theNo" bindblur="validate" maxlength="6" placeholder="请输入六位学号..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="thePhone">
+        <view class="Phone">电话</view>
+        <view class="textPhone">
+ <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="thePhone" bindblur="validate" maxlength="11" placeholder="请输入十一位手机号码..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="theQQ">
+        <view class="QQ">QQ</view>
+        <view class="textQQ">
+            <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theQQ" bindblur="validate" maxlength="13" placeholder="请输入你的QQ号..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="theSex">
+        <view class="Sex">性别</view>
+        <view class="textSex">
+<input type="text" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theSex" bindblur="validate" placeholder="请输入你的姓别..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="thePassword">
+        <view class="Password">密码</view>
+        <view class="textPassword">
+<input type="password" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="thePassword" bindblur="validate" placeholder="请输入你的密码..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    <view class="theFinalPassword">
+        <view class="FinalPassword">确认密码</view>
+        <view class="textFinalPassword">
+<input type="password" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theFinalPassword" bindblur="validate" placeholder="请输入确认密码..." placeholder-style="font-size:5vw;"/>
+        </view>
+    </view>
+    
+</view>
+<button class="btn" type="primary" bindtap="Click" >
+    注册
+</button>

@@ -1,0 +1,11 @@
+.picker{
+    line-height: 80rpx;
+}
+.seat{
+    margin-left: 30rpx;
+    line-height:150rpx;
+}
+.Button{
+    margin-left: 500rpx;
+    size: 80rpx;
+}

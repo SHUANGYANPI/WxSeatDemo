@@ -1,0 +1,8 @@
+<view>
+  <text>宜之阁（自然图书T~Z）(二楼)\n</text>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+  <checkbox checked='true'></checkbox>
+</view>
