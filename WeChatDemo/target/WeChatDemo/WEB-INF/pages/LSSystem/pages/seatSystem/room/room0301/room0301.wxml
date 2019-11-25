@@ -1,8 +1,0 @@
-<view>
-  <text>时进阁（社科图书F、G）(三楼)\n</text>
-  <checkbox checked='true'></checkbox>
-  <checkbox checked='true'></checkbox>
-  <checkbox checked='true'></checkbox>
-  <checkbox checked='true'></checkbox>
-  <checkbox checked='true'></checkbox>
-</view>

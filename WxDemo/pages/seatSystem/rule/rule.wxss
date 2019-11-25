@@ -1,8 +1,0 @@
-.title{
-    font-size: 50rpx;
-    text-align: center;
-}
-.p1,.p2,.p3,.p4{
-    line-height: 80rpx;
-    margin-left: 60rpx;
-}
