@@ -1,6 +1,7 @@
 package demo.Controller;
 
 import demo.Service.SeatService;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller("seatController")
@@ -46,15 +50,31 @@ public class SeatController {
      * @return
      */
     @RequestMapping(value = "/FindRoomUsedSeat",produces="text/html;charset=UTF-8")
-    public @ResponseBody String FindRoomUsedSeat(@RequestBody String seatdata){
-        JSONObject jsonget = JSONObject.fromObject(seatdata);
-        System.out.println(jsonget);
-        String floor = (String)jsonget.get("floor");
-        String room = (String)jsonget.get("room");
-        Map<String,Object> map = seatService.FindEveryEmptySeatOfFloorAndRoom(floor,room);
-        String id = (String) map.get("sno");
-        int sid = Integer.valueOf(id).intValue();
-        return "{\"no\":"+sid+"}";
+    @ResponseBody
+    public String FindRoomUsedSeat(@RequestBody String seatdata){
+        JSONObject jsonGet = JSONObject.fromObject(seatdata);
+
+        String send = "";
+        System.out.println(jsonGet+"get");
+        String floor = (String)jsonGet.get("floor");
+        String room = (String)jsonGet.get("room");
+        List<Map<String, Object>> lists = seatService.FindEveryEmptySeatOfFloorAndRoom(floor,room);
+        //由于查询出来的数据没有用
+
+/*        JSONObject jsonSend;
+        List<JSONObject> list1 = new ArrayList<>();
+
+        String send = "";
+        for (Map<String, Object> map:lists){
+             jsonSend = JSONObject.fromObject(map);
+             list1.add(jsonSend);//将遍历出来的座位放入List中
+
+        }*/
+
+        JSONArray jsonSend1 = JSONArray.fromObject(lists);//将List类型转化为JSONArray对象，方便转化为JSON字符进行传送
+        send = jsonSend1.toString();//转换为JSON字符串，进行数据传送
+
+        return send;
     }
 
     /**

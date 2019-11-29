@@ -5,6 +5,7 @@ import demo.Service.SeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service("seatService")
@@ -29,7 +30,7 @@ public class SeatServiceImp implements SeatService {
         return seatDao.FindEverySeatOfFloor(floor,room);
     }
 
-    public Map<String,Object> FindEveryEmptySeatOfFloorAndRoom(String floor, String room) {
+    public List<Map<String, Object>> FindEveryEmptySeatOfFloorAndRoom(String floor, String room) {
         return seatDao.FindEveryEmptySeatOfFloorAndRoom(floor,room);
     }
 

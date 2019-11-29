@@ -42,6 +42,7 @@ var app = getApp();
   },
   //点击"选座"
   ChooseSeat:function(){
+     wx.navigateTo({ url: "floor/floor" });   //保留当前页面，跳转到应用内的某个页面
     if(app.data.ifTime===false){
       app.data.ifTime = true;
     }
@@ -55,6 +56,7 @@ var app = getApp();
   },
   //点击“预约”改变全局变量ifTime
   ChangeIfTime:function(){
+     wx.navigateTo({ url: "floor/floor" });   //保留当前页面，跳转到应用内的某个页面
     if(app.data.ifTime===true){
       app.data.ifTime = false;
     }

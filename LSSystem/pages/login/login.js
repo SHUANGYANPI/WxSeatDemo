@@ -24,9 +24,9 @@ pasWInput: function (e) {
 },
 loginBtnClick: function (e) {
   var that = this
-  app.data.no = that.data.uno;
+  app.data.uno = that.data.uno;
   wx.request({
-    url: 'http://localhost:8080/studentController/Login',//自己请求的服务器的地址
+    url: app.data.url+'studentController/Login',//自己请求的服务器的地址
       data:{
         "uno":that.data.uno,
         "password":that.data.password

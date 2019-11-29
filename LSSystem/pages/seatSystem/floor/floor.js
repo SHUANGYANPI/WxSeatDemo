@@ -55,7 +55,9 @@ Page({
     if(r03==="野萝阁(中)"){
       hid = false;
     }
-    wx.navigateTo({url:'../chooseSeat/chooseRoom01/chooseRoom01?floorNumber='+q+'&rName01='+r01+'&rName02='+r02+'&rName03='+r03+'&hid='+hid}) 
+    wx.navigateTo({
+      url:'../chooseSeat/chooseRoom01/chooseRoom01?floorNumber='+q+'&rName01='+r01+'&rName02='+r02+'&rName03='+r03+'&hid='+hid
+      }) 
     },
 
   /**

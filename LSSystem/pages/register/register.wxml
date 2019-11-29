@@ -9,7 +9,7 @@
     <view class="theNo">
         <view class="No">学号</view>
         <view class="textNo">
- <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theNo" bindblur="validate" maxlength="6" placeholder="请输入六位学号..." placeholder-style="font-size:5vw;"/>
+ <input type="number" auto-focus focus='{{focus}}' value="{{value}}" title="" bindinput="theNo" bindblur="validate" maxlength="8" placeholder="请输入八位学号..." placeholder-style="font-size:5vw;"/>
         </view>
     </view>
     <view class="thePhone">

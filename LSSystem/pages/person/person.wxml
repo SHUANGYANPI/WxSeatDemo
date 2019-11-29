@@ -37,7 +37,7 @@
   <view class="row4">
     <image class="zeroCol" mode="aspectFit" src="../image/addup.png"/>
     <text class="oneCol">累计选座：</text>
-    <text class="twoCol">{{user.count}}次</text>
+    <text class="twoCol">{{count}}次</text>
   </view>
 </view>
 

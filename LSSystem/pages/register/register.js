@@ -1,5 +1,5 @@
 // pages/register/register.js
-
+var app = getApp()
 function isNumber(str){
   if (/^[0-9]+$/.test(str)) {//这是用正则表达检查
     return false;
@@ -68,9 +68,9 @@ Page({
     var that = this
     console.log(that.data.FinalPassword);
     console.log(that.data.Password);
-    if (that.data.Password!=that.data.FinalPassword){
+    if (that.data.No == '' || that.data.QQ == '' || that.data.Password == '' || that.data.FinalPassword == '' || that.data.Phone == '' || that.data.Sex == '' || that.data.Name == ''){
       wx.showToast({
-        title: '密码不一致',
+        title: '全部必填',
         icon: 'fail',
         duration: 2000
       })
@@ -92,10 +92,16 @@ Page({
         icon: 'fail',
         duration: 2000
       })
+    } else if (that.data.Password != that.data.FinalPassword){
+      wx.showToast({
+        title: '密码不一致',
+        icon: 'fail',
+        duration: 2000
+      })
     }
     else{
     wx.request({
-      url: 'http://localhost:8080/studentController/Register',//自己请求的服务器的地址
+      url: app.data.url +'studentController/Register',//自己请求的服务器的地址
       data:{
           "no": that.data.No,
           "name": that.data.Name,

@@ -2,9 +2,11 @@ package demo.Dao.imp;
 
 import demo.Dao.SeatDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
 import java.util.Map;
 
 @Component("seatDao")
@@ -32,8 +34,13 @@ public class SeatDaoImp implements SeatDao {
 
     }
 
-    public Map<String,Object> FindEveryEmptySeatOfFloorAndRoom(String floor, String room) {
-        return jdbcTemplate.queryForMap("select sno from had_choose where floor=? and room=?",floor,room);
+    public List<Map<String, Object>> FindEveryEmptySeatOfFloorAndRoom(String floor, String room) {
+        try {
+            return jdbcTemplate.queryForList("select no,floor,room,sno from had_choose where floor=? and room=?",floor,room);
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public Map<String,Object> FindEveryEmptySeatOfFloor(String floor) {

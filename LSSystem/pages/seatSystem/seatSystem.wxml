@@ -10,14 +10,34 @@
 
 <!--表格-->
 <view class="table">
-  <view class="top"><navigator url="rule/rule" open-type="navigate">选座须知</navigator></view>
+  <view class="top">
+    <navigator class="topLeft" url="rule/rule" open-type="navigate">选座须知</navigator>
+    <view  class="topRight"><cover-image src="../image/top.png" /></view>
+  </view>
   <view class="one_bgc">
-    <view class="one"><navigator url="floor/floor" open-type="navigate"  bindtap="ChooseSeat">选座</navigator></view>
-    <view class="one" style="background-color:yellow"><navigator url="floor/floor" open-type="navigate" bindtap="ChangeIfTime">预约</navigator></view>
+    <view class="one1" bindtap="ChooseSeat" hover-class="btColor">
+      <image class="oneTop" src="../image/chooseSeat.png" mode="aspectFit"/>
+      <view class="oneBotton">选座</view>
+    </view>
+    <view class="one2" bindtap="ChangeIfTime"  hover-class="btColor">
+      <image class="oneTop" src="../image/appointment.png" mode="aspectFit"/>
+      <view >预约</view>
+    </view>
   </view>
   <view class="two_bgc">
-    <view class="two" style="background-color:purple"><navigator url="floor/floor" open-type="navigate" bindtap="lookSeat">查看</navigator></view>
-    <view class="two">退座</view>
+    <view class="two1" hover-class="btColor">
+      <image class="twoTop" src="../image/query.png" mode="aspectFit"/>
+      <view class="twoBotton" bindtap="lookSeat">查看</view>
+    </view>
+    <view class="two2" hover-class="btColor">
+      <image class="twoTop" src="../image/leave.png" mode="aspectFit"/>
+      <view class="twoBotton" bindtap="">退座</view>
+    </view>
   </view>
-  <view class="bottom" bindtap="More">更多功能</view>
+  <view class="botn_bgc" >
+    <view class="botton" bindtap="More"  hover-class="btColor">
+      <image class="bottonTop" src="../image/more.png" mode="aspectFit"/>
+        <view class="bottonBotton" bindtap="">更多功能</view>
+    </view>
+  </view>
 </view>

@@ -76,11 +76,11 @@ Page({
                 
               })
 
-              var uno=app.data.no;
+              var uno=app.data.uno;
 
               //将选座数据插入到数据库中
               wx.request({
-                url: 'http://localhost:8080/seatController/SaveSeatOfUser',//自己请求的服务器的地址
+                url: app.data.url +'seatController/SaveSeatOfUser',//自己请求的服务器的地址
                 method: 'POST',
                 data: {
                   "floor": th.data.floorId,
@@ -97,6 +97,7 @@ Page({
                   th.setData({
                     seat: getdata
                   })
+                  //console.log(seat);
                 }
               })
 
@@ -186,8 +187,8 @@ Page({
     });
 
     wx.request({
-      url: 'http://localhost:8080/seatController/FindRoomUsedSeat',//自己请求的服务器的地址
-      method: 'POST',
+      url: app.data.url +'seatController/FindRoomUsedSeat',//自己请求的服务器的地址
+      method: 'post',
       data: {
         "floor": that.data.floorId,
         "room": that.data.roomId,
@@ -201,13 +202,16 @@ Page({
         that.setData({
           seat: getdata
         })
-        console.log(that.data.seat.no)
-        var gety = (that.data.seat.no) % 9;
-        var getx = (that.data.seat.no - gety) / 9;
-        var getcol = 'color[' + getx + '][' + gety + ']';
-        that.setData({
-          [getcol]: "red",
-        })
+        console.log(that.data.seat[0].sno);
+        for (var i = 0; i < that.data.seat.length;i++){
+          var gety = (that.data.seat[i].sno) % 9;
+          var getx = (that.data.seat[i].sno - gety) / 9;
+          var getcol = 'color[' + getx + '][' + gety + ']';
+          that.setData({
+            [getcol]: "red",
+          })
+        }
+
       }
     })
 

@@ -21,8 +21,10 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--注入连接数据库的必备信息-->
         <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/seat"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://39.105.41.88:3306/seat?useUnicode=true&amp;characterEncoding=UTF-8"></property>
         <property name="user" value="root"></property>
         <property name="password" value="047139"></property>
     </bean>
+
+
 </beans>

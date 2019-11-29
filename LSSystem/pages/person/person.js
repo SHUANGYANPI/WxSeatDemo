@@ -11,24 +11,30 @@ Page({
     name:"Lisa",
     sex:"女",
     integral:5,
-     uno1:''
-
+     uno1:'',
   },
 
  //点击扫码图扫码 允许从相机和相册扫码
  clickScnner:function(event){
-  wx.scanCode({
+   var that = this;
+   wx.scanCode({
     //onlyFromCamera: true,//只允许从相机扫码
     success (res) {
-      //console.log(res.result);
+       
       var result = res.result;//将扫描结果存放在result中
+       //console.log(result);
       if(result==app.data.no){  //签到成功
         app.data.signIn = true, //签到成功将signIn置true
-        
+        that.data.count++;
+           that.setData({
+              count:that.data.count
+           })
         wx.showModal({
-          title: '签到结果：',
-          content: '签到成功！',
+         title: '签到结果：',
+         content: '签到成功！',
         })
+
+
       }else{
         app.data.signIn = false,
         wx.showModal({
@@ -45,16 +51,16 @@ Page({
    */
 
   data:{
-   
+     count: 0
   },
   onLoad: function (options) {
 
     wx.setNavigationBarTitle({title:'个人信息'});
 
-    var uno1 = app.data.no;
+    var uno1 = app.data.uno;
     var that = this;
     wx.request({
-      url: 'http://localhost:8080/studentController/findOneStudent',//自己请求的服务器的地址
+      url: app.data.url+'studentController/findOneStudent',//自己请求的服务器的地址
       method: 'POST',
       header: {
         'content-type': 'application/json;charset=UTF-8', // 默认值
@@ -64,6 +70,10 @@ Page({
         "uno": uno1
       },
       success: function (req) {
+         app.data.no = req.data.noId;
+        console.log(app.data.no)
+         that.data.count = req.data.count;
+         console.log(that.data.count);
         var list = req.data;
         if (list == null) {
           wx.showToast({
@@ -93,7 +103,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.onLoad();//每次进入此页面要重新加载
   },
 
   /**

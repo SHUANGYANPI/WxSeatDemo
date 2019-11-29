@@ -23,7 +23,7 @@ Page({
 Click:function(e){
   var that = this
   wx.request({
-    url: 'http://localhost:8080/studentController/findPassword',//自己请求的服务器的地址
+    url: app.data.url +'studentController/findPassword',//自己请求的服务器的地址
     data: {
       "shenfenzheng": that.data.ID,
       "password": that.data.newPassword
